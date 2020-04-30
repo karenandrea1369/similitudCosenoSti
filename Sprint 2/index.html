@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="app">
+        <div class="app__ranges">
+
+            <h1>Similitud coseno</h1>
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="files">Cargar archivo CSV:</label>
+                    <input type="file" id="files" class="form-control" accept=".csv" required />
+                </div>
+            
+                <div class="form-group">
+                    <button type="submit" id="submit-file" class="btn btn-primary upload">Subir archivo</button>
+                </div>
+            </form>
+
+            <select style="margin-top: 20px;" name="compare" class="compare" id="compare">
+                <option disabled selected>Selecciona un estudiante</option>
+            </select>
+            <!-- <select name="compareTo" class="compareTo" id="compareTo">
+                <option disabled selected>Selecciona un estudiante</option>
+            </select> -->
+            <button class="similarity">Calcular Similitud</button>
+
+            <label  for="edad">Edad</label>
+            <input min="0.00001" max="1" step="0.01" value='1' id="edad" type="range" class="range">
+
+            <label for="edad">Peso</label>
+            <input min="0.00001" max="1" step="0.01" value='1' id="peso" type="range" class="range">
+
+            <label for="edad">Altura</label>
+            <input min="0.00001" max="1" step="0.01" value='1' id="altura" type="range" class="range">
+
+            <label  for="edad">Mascotas</label>
+            <input min="0.00001" max="1" step="0.01" value='1' id="mascotas" type="range" class="range">
+        </div>
+
+        <div class="app__persons">
+            <div class="resultContainer"></div>
+        </div>
+    </div>
+    <!-- <h2 class="resultContainer__data">La similitud coseno es:</h2> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+    <script src="PapaParse-5.0.2/papaparse.min.js"></script>
+    <script src="node_modules/js-big-decimal/dist/web/js-big-decimal.min.js"></script>
+    <script src="Sprint.js"></script>
+
+</body>
+</html>
