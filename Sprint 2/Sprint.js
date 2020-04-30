@@ -86,6 +86,7 @@ window.addEventListener('load', function(){
             containerPerson.classList.add('containerPerson');
             containerPerson.style.backgroundImage = 'url(./fotos/' + (i + 1) + '.png)';
             var person = document.createElement('p');
+            person.classList.add('name');
             person.innerText = rows[0];
             containerPerson.appendChild(person);
             resultContainer.appendChild(containerPerson);

@@ -16,7 +16,7 @@
 
             <form class="form-inline">
                 <div class="form-group">
-                    <label for="files">Cargar archivo CSV:</label>
+                    <label for="files">Seleccionar base de datos</label>
                     <input type="file" id="files" class="form-control" accept=".csv" required />
                 </div>
             
@@ -25,7 +25,9 @@
                 </div>
             </form>
 
-            <select style="margin-top: 20px;" name="compare" class="compare" id="compare">
+            <h4 class="tittleSelect">Selecciona un estudiante para comparar</h4>
+
+            <select  name="compare" class="compare" id="compare">
                 <option disabled selected>Selecciona un estudiante</option>
             </select>
             <!-- <select name="compareTo" class="compareTo" id="compareTo">
@@ -33,17 +35,21 @@
             </select> -->
             <button class="similarity">Calcular Similitud</button>
 
-            <label  for="edad">Edad</label>
-            <input min="0.00001" max="1" step="0.01" value='1' id="edad" type="range" class="range">
+            <div class="ranges">
+                <label  for="edad">Edad</label>
+                <input min="0.00001" max="1" step="0.01" value='1' id="edad" type="range" class="range">
 
-            <label for="edad">Peso</label>
-            <input min="0.00001" max="1" step="0.01" value='1' id="peso" type="range" class="range">
+                <label for="edad">Peso</label>
+                <input min="0.00001" max="1" step="0.01" value='1' id="peso" type="range" class="range">
 
-            <label for="edad">Altura</label>
-            <input min="0.00001" max="1" step="0.01" value='1' id="altura" type="range" class="range">
+                <label for="edad">Altura</label>
+                <input min="0.00001" max="1" step="0.01" value='1' id="altura" type="range" class="range">
 
-            <label  for="edad">Mascotas</label>
-            <input min="0.00001" max="1" step="0.01" value='1' id="mascotas" type="range" class="range">
+                <label  for="edad">Mascotas</label>
+                <input min="0.00001" max="1" step="0.01" value='1' id="mascotas" type="range" class="range">
+            </div>
+
+            
         </div>
 
         <div class="app__persons">

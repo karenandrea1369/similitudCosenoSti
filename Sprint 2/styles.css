@@ -26,10 +26,18 @@ body{
     height: auto;
     display: flex;
     justify-content: center;
+    
 }
 
 .range{
-    width: 60%;
+    width: 50%;
+}
+
+.ranges{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .compare{
@@ -75,6 +83,12 @@ label[for="files"] {
 }
 
 
+.tittleSelect{
+    margin-top: 60px;
+}
+
+
+
 .containerPerson{
     display: flex;
     flex-direction: column;
@@ -100,38 +114,45 @@ label[for="files"] {
     width: 100%;
 }
 
-p{
-    color: white;
+.name{
+    color:lightseagreen;
     font-size: 12px;
+    font-weight: 600;
     text-align: center;
+    margin-top: 110px;
 }
 
 .containerPerson--center{
     position: absolute;
     left: 300px !important;
     top: 300px !important;
-    margin-left: -35px !important;
-    margin-top: -35px !important;
+    margin-left: -42px !important;
+    margin-top: -42px !important;
     background-color: chocolate;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
+    width: 80px;
+    height: 80px;
+    border-radius: 45px;
+    border: lightseagreen 4px solid;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .resultContainer{
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+    background-image: url("./fotos/fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
